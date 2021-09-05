@@ -1,0 +1,62 @@
+button, li, ul, p{
+	padding: 0;
+	border: 0;
+	margin: 0;
+}
+
+.list{
+	margin-top: 15px;
+}
+
+.item{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	background-color: rgb(255 249 197);
+
+	padding-left: 10px;
+
+	color: #333333;
+	font-weight: 400;
+	font-size: 1.3rem;
+	font-family: 'Patrick Hand SC', cursive;
+	
+	border-radius: 12px;
+	border: red;
+
+	margin-top: 2px;
+
+	width: 90vw;
+	height: 5vh;
+}
+
+button{
+	height: 5vh;
+	width: 30vw;
+
+	border-radius: 0 12px 12px 0;
+
+	background-color: rgb(219, 161, 154);
+
+	color: #333333;
+	font-weight: bold;
+	font-size: 1.3rem;
+	font-family: 'Waiting for the Sunrise', cursive;
+}
+
+	button:hover{
+		filter: brightness(0.9);
+	}
+
+@media (min-width: 700px){
+	.item{
+		max-width: 630px;
+		font-size: 1.2rem;
+	}
+	button{
+		max-width: 200px;
+		font-size: 1.2rem;
+	}
+}

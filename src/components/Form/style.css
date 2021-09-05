@@ -1,0 +1,78 @@
+input, button, form, input:focus{
+	padding: 0;
+	border: 0;
+	margin: 0;
+	outline: none;
+}
+
+form{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+
+	max-width: 90vw;
+}
+
+.add{
+	height: 40px;
+	width: 30vw;
+
+	color: #333333;
+	font-size: 1.3rem;
+	font-weight: 700;
+	font-family: 'Waiting for the Sunrise', cursive;
+
+	background-color: rgb(255, 0, 0);
+
+	border-radius: 0px 15px 15px 0px;
+	border: solid 3px #ff0000;
+
+	cursor: pointer;
+}
+
+	.add:hover{
+		filter: brightness(0.8);
+	}
+
+input {
+	height: 34px;
+	width: 60vw;
+
+	padding-left: 10px;
+
+	font-size: 1rem;
+	font-weight: bold;
+
+	border-radius: 15px 0 0 15px;
+	border: solid 3px #ff0000;
+
+	background-color: #e8e8e8;
+
+	color: #333333;
+}
+
+	input:focus {
+		border: solid 3px #ff0000;
+		padding-left: 10px;
+		
+	}
+	input::placeholder{
+		transition: padding-left 0.5s;
+	}
+		input:hover::placeholder{
+			padding-left: 15px;
+		}
+
+@media (min-width: 700px){
+	.add{
+		max-width: 199px;
+		font-size: 1.3rem;
+	}
+
+	input{
+		font-size: 1.2rem;
+		max-width: 431px;
+	}
+}
